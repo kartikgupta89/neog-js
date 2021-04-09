@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        h1 {
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            background-color: rgb(233, 164, 36);
+        }
+
         textarea {
             display: block;
             margin: 1rem;
@@ -17,20 +26,14 @@
             justify-content;
             height: 200px;
         }
-        h1 {
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-            text-align: center;
-            color: white;
-            background-color: rgb(233, 164, 36);
-        }
+
         button {
             color: rgb(233, 164, 36);
             border: solid orange 2px;
             margin: 1rem;
             padding: 0.5rem;
         }
+
         .flex-container {
             display: flex;
             flex-direction: row;
@@ -38,17 +41,27 @@
             align-items: center;
         }
 
+        footer {
+            font-style: italic;
+            font-size: x-small;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 1rem;
+            padding: 0.5rem;
+            border: dotted coral 0.5px;
+            text-align: right;
+        }
     </style>
 </head>
 
 <body>
     <h1>Speak the Queen's English</h1>
     <div class="flex-container">
-        <textarea id="txt-input" placeholder="Type regular English here, the way you speak it. But not the bhojpuri mashup please."></textarea>
+        <textarea id="txt-input"
+            placeholder="Type regular English here, the way you speak it. But not the bhojpuri mashup please."></textarea>
         <button id="btn-translate">Translate</button>
         <textarea id="txt-output" placeholder="Shakespearean speak will appear here magically."></textarea>
     </div>
-
+    <footer>Frontend dev by KG</footer>
     <script src="app.js" type="text/javascript"></script>
 </body>
 
